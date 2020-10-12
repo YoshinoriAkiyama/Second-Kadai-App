@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  SecondKadaiApp
 //
 //  Created by Yoshinori Akiyama on 2020/10/11.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class SecondViewController: UIViewController {
+    @IBOutlet weak var label: UILabel!
+    
+    var name: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
+        label.text = "こんにちは、\(name)さん"
     }
 
-
 }
-
